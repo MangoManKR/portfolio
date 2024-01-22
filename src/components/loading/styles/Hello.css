@@ -1,0 +1,29 @@
+.greeting-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+  }
+  
+  .greeting-container p {
+    font-family: 'Arial', sans-serif;
+    white-space: nowrap;
+    opacity: 0;
+    animation-timing-function: ease;
+  }
+  
+  @keyframes pop-up {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+  }
