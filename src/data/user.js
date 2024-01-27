@@ -3,7 +3,7 @@ const INFO = {
 		title: "MangoManKR",
 		name: "Minkyu Jang",
 		email: "minguujjjang@gmail.com",
-		logo: "../logo.png",
+		logo: "/logo.png",
 	},
 
 	socials: {

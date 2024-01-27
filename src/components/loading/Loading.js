@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Spinner from './Spinner';
 import GreetingSplash from './GreetingSplash';
+import { Helmet } from "react-helmet";
 
 function Loading({ onFinishLoading }) {
   const [showLoading, setShowLoading] = useState(true);
@@ -24,10 +25,15 @@ function Loading({ onFinishLoading }) {
   }, [onFinishLoading]);
 
   return (
+    <React.Fragment>
+    <Helmet>
+				<title>{"MangoManKR"}</title>
+			</Helmet>
     <div>
       {showLoading && <Spinner />}
       {<GreetingSplash />}
     </div>
+    </React.Fragment>
   );
 }
 

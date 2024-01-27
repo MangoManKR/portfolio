@@ -50,7 +50,7 @@ function App() {
         <div className={showInfo ? 'fade-in' : 'fade-out'}>
           <div className="App">
 		      	<Routes>
-		      		<Route path="/portfolio" element={<Homepage />} />
+		      		<Route path="/" element={<Homepage />} />
 		      		<Route path="/about" element={<About />} />
 		      		<Route path="/projects" element={<Projects />} />
 		      		<Route path="/articles" element={<Articles />} />
