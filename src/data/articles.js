@@ -3,7 +3,7 @@ import React from "react";
 function article_1() {
 	return {
 		date: "12 Jan 2024",
-		title: "The Benefits of Cloud Computing",
+		title: "디지털 치료제는 어떻게 받아들여져야 하는가",
 		description:
 			"Cloud computing offers a range of benefits, including cost savings and increased flexibility. Find out why more businesses are turning to the cloud.",
 		keywords: [

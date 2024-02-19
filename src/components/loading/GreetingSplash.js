@@ -31,12 +31,14 @@ function GreetingSplash() {
     };
     
     const fixedGreetingStyle = {
-        position: 'fixed',
-        top: '20%',
-        left: '30%',
-        transform: 'translate(-50%, -50%)',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        position: 'absolute',
+        width: '100%',
+        height: '50%',
         textAlign: 'center',
-        fontSize: '100px',
+        fontSize: '15vw',
         animationName: 'slide-up',
         animationDuration: '2s',
         animationFillMode: 'backwards',
