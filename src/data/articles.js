@@ -17,20 +17,62 @@ function article_1() {
 					display: flex;
 					flex-direction: column;
 					align-items: center;
+					width: 100%;
 				}
 
 				.randImage {
 					align-self: center;
-					outline: 2px solid red;
+					outline: 2px solid black;
+					width: 100%;
+					max-height: 80vh;
+					margin: 50px;
+				}
+
+				.paragraph {
+					text-align:  center;
+					white-space: pre-wrap;
 				}
 				`,
 		body: (
 			<React.Fragment>
 				<div className="article-content">
-					<div className="paragraph">Content of article 1</div>
+					<div className="paragraph">{"Content of article 1와 최대 길이가 얼마인지와 자동 줄바꿈이 되는 지 안 되는 지 알아보기 위한 아무말을 적어보기. 이 글은 렌더링을 해보고 문제가 없을 경우에는 다시 삭제할 것.\n"}
+					</div>
 					<img
-						src="https://picsum.photos/200/300"
-						alt="random"
+						src={process.env.PUBLIC_URL + '/article1/action_support.jpg'}
+						alt="supporting image"
+						className="randImage"
+						object-fit="scale-down"
+					/>
+					<div className="paragraph">Content of article 1와 최대 길이가 얼마인지와 자동 줄바꿈이 되는 지 안 되는 지 알아보기 위한 아무말을 적어보기. 이 글은 렌더링을 해보고 문제가 없을 경우에는 다시 삭제할 것. </div>
+					<img
+						src={process.env.PUBLIC_URL + '/article1/card_support.jpg'}
+						alt="supporting image"
+						className="randImage"
+						object-fit="scale-down"
+					/>
+					<div className="paragraph">Content of article 1와 최대 길이가 얼마인지와 자동 줄바꿈이 되는 지 안 되는 지 알아보기 위한 아무말을 적어보기. 이 글은 렌더링을 해보고 문제가 없을 경우에는 다시 삭제할 것. </div>
+					<video
+						src={process.env.PUBLIC_URL + '/article1/boxing.mp4'}
+						controls
+						className="randImage"
+					/>
+					<div className="paragraph">Content of article 1와 최대 길이가 얼마인지와 자동 줄바꿈이 되는 지 안 되는 지 알아보기 위한 아무말을 적어보기. 이 글은 렌더링을 해보고 문제가 없을 경우에는 다시 삭제할 것. </div>
+					<video
+						src={process.env.PUBLIC_URL + '/article1/juice.mp4'}
+						controls
+						className="randImage"
+					/>
+					<div className="paragraph">Content of article 1와 최대 길이가 얼마인지와 자동 줄바꿈이 되는 지 안 되는 지 알아보기 위한 아무말을 적어보기. 이 글은 렌더링을 해보고 문제가 없을 경우에는 다시 삭제할 것. </div>
+					<video
+						src={process.env.PUBLIC_URL + '/article1/socks.mp4'}
+						controls
+						className="randImage"
+					/>
+					<div className="paragraph">Content of article 1와 최대 길이가 얼마인지와 자동 줄바꿈이 되는 지 안 되는 지 알아보기 위한 아무말을 적어보기. 이 글은 렌더링을 해보고 문제가 없을 경우에는 다시 삭제할 것. </div>
+					<video
+						src={process.env.PUBLIC_URL + '/article1/sushi.mp4'}
+						controls
 						className="randImage"
 					/>
 				</div>

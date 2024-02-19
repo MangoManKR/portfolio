@@ -7,11 +7,11 @@ const INFO = {
 	},
 
 	socials: {
-		twitter: "https://twitter.com/",
+		twitter: "https://twitter.com/MangoManKR1",
 		github: "https://github.com/MangoManKR",
 		linkedin: "https://www.linkedin.com/in/%EB%AF%BC%EA%B7%9C-%EC%9E%A5-606601271/",
 		instagram: "https://www.instagram.com/minguujjjang/",
-		stackoverflow: "https://stackoverflow.com/",
+		stackoverflow: "https://stackoverflow.com/users/23439556/minkyu-jang",
 		facebook: "https://www.facebook.com/profile.php?id=100006589141366&locale=ko_KR",
 	},
 
