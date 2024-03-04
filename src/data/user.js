@@ -76,7 +76,7 @@ const INFO = {
 				"Attach the IMU sensor to the body of the disabled patient and learn the recorded values through machine learning so that the prognosis and treatment of disability can be learned using AI.",
 			logo: "https://w7.pngwing.com/pngs/813/699/png-transparent-introduction-to-matlab-simulink-simulation-urbi-matlab-angle-triangle-computer-wallpaper.png",
 			//linkText: "View Project",
-			//link: "https://github.com",
+			link: "https://www.rbiotech.kr/",
 		},
 	],
 };
