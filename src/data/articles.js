@@ -5,12 +5,11 @@ function article_1() {
 		date: "12 Jan 2024",
 		title: "디지털 치료제는 어떻게 받아들여져야 하는가",
 		description:
-			"Cloud computing offers a range of benefits, including cost savings and increased flexibility. Find out why more businesses are turning to the cloud.",
+			"Consideration of what I learned from hospital clinical observership and the future direction of digital healthcare.",
 		keywords: [
-			"The Benefits of Cloud Computing",
-			"Tharindu",
-			"Tharindu N",
-			"Tharindu Nayanajith",
+			"Healthcare",
+			"Hospital",
+			"Clinical observership"
 		],
 		style: `
 				.article-content {
@@ -81,6 +80,66 @@ function article_1() {
 		),
 	};
 }
+
+function article_2() {
+	return {
+		date: "7 Jun 2024",
+		title: "게임 역기획서 써보기",
+		description:
+			"Independent Reverse Spec & Concept Study - The Legend of Zelda: BotW",
+		style: `
+				.article-content {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					width: 100%;
+				}
+
+				.randImage {
+					align-self: center;
+					outline: 2px solid black;
+					width: 100%;
+					max-height: 80vh;
+					margin: 50px;
+				}
+
+				.paragraph {
+					text-align:  center;
+					white-space: pre-wrap;
+				}
+				`,
+		keywords: [
+			"Reverse Concept Study",
+			"BotW",
+			"Breath of the Wild"
+		],
+		body: (
+			<React.Fragment>
+				<div className="article-content">
+          <div className="paragraph">
+            {"이번 글에서는 작성해둔 역기획서 pdf를 그대로 첨부해보려 합니다.\n"}
+          </div>
+
+          {/* 여기서 pdf 보여줌 */}
+          <iframe
+            src={process.env.PUBLIC_URL + "/article2/zelda.pdf"}
+            title="게임 역기획서"
+            className="pdf-viewer"
+          />
+
+          {/* 혹시 iframe이 안 보일 때를 대비한 다운로드 링크 */}
+          <a
+            href={process.env.PUBLIC_URL + "/article2/zelda.pdf"}
+            target="_blank"
+            rel="noreferrer"
+          >
+            PDF 새 창에서 열기
+          </a>
+        </div>
+			</React.Fragment>
+		),
+	};
+}
 /*
 function article_2() {
 	return {
@@ -103,6 +162,6 @@ function article_2() {
 	};
 }
 */
-const myArticles = [article_1, /*article_2*/];
+const myArticles = [article_1, article_2 /*article_2*/];
 
 export default myArticles;
